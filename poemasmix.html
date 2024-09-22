@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <title>Poemas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <link rel="stylesheet" href="stylew3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="styleaudiv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="assets/imagenes/LR.png" type="image/png">
+    <script src="script.js" defer></script> <!-- Incluye el archivo JavaScript -->
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-64 w3-center"><b>Poemas</b></h3>
+        <a href="#a-raya" onclick="w3_close()" class="w3-bar-item w3-button">SENTIMIENTO</a>
+        <a href="#a-raya" onclick="w3_close()" class="w3-bar-item w3-button">A Raya</a>
+        <a href="#a-veces" onclick="w3_close()" class="w3-bar-item w3-button">A Veces</a>
+        <a href="#absurdos" onclick="w3_close()" class="w3-bar-item w3-button">Absurdos y entramados</a>
+    </nav>
+
+    <!-- Top menu on all screens -->
+    <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">Lizeth Ruaro</span>
+        <button onclick="abrirMenu()" class="w3-button w3-white w3-right margen-derecha">☰</button>
+        <button onclick="redirigirPortafolio()" class="w3-button w3-white w3-right">←</button>
+    </header>
+
+
+    <!-- Overlay effect when opening sidebar -->
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer;display:none;" id="myOverlay">
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <div class="videopresentacion">
+            <video autoplay loop muted playsinline class="responsive-video">
+                <source src="assets/videos/videoprespoem.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+
+        <hr>
+
+        <div class="content">
+
+            <h5 id="a-raya">SENTIMIENTO</h5>
+            <h6>2024</h6>
+            <h6>Videopoema</h6>
+            <p>A través de la escritura, los visuales y el diseño sonoro, SENTIMIENTO explora la crudeza del sentir.
+                Siendo fiel al propósito de la artista: traducir la visceralidad de sentimientos y sensaciones a través
+                del lenguaje artístico. </p>
+            <video class="responsive-video" controls>
+                <source src="assets/videos/Sentimiento-videopoema.mov" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+            <br>
+            <br>
+            <hr>
+
+            <h5 id="a-raya">A Raya</h5>
+            <h6>2024-presente</h6>
+            <h6>Hilación de narrativas</h6>
+            <p>Todas las palabras de todos los poemas están ya escritas. Son las líneas y las entrelíneas las que
+                dibujan los propósitos.</p>
+            <img src="assets/imagenes/araya1.png" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <p>A raya es un ejercicio de creación, de exploración del
+                diccionario y los significados que guarda. Sobre denotar las líneas y su esencialidad al crear
+                narrativas.
+            </p>
+            <img src="assets/imagenes/araya2.png" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/araya3.png" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <br>
+            <br>
+            <hr>
+
+            <h5 id="a-veces">A Veces</h5>
+            <h6>2024</h6>
+            <h6>Poema / Intervención Fotográfica</h6>
+            <p>Esta reflexión nace de mirarme al espejo notando el cambio de mis facciones a través del tiempo y como
+                los rostros de mis padres se mezclan en la nueva madurez del mío.</p>
+            <img src="assets/imagenes/aveces.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/avecespadre.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <br>
+            <br>
+            <br>
+
+            <a id="absurdos" href="https://lizethruaro.github.io/AbsurdosyEntramados/" target="_blank"
+                class="h5-link">Absurdos y entramados</a>
+            <h6>2024</h6>
+            <h6>Poemario Web</h6>
+            <p>¿Qué se siente sentir menos?</p>
+            <p>Mi madre solía decirme que siento mucho, y desbordaba.</p>
+            <img src="assets/imagenes/recortes/paginapoemas.jpg" alt="Descripción de la imagen"
+                class="imagen-responsiva" />
+            <p>Cada emoción es completamente gigante, incluso desastroza. Así que aprendí a desbarajarlas, a través del
+                lenguaje escrito, cada vez el sentir se hacía más específico.</p>
+            <p>Sé lo que se siente, cómo se siente y la forma en la que combina.</p>
+            <p>Comienza a leer, mira mi corazón deshilacharse sinceramente ante tus ojos y guárdalo entre tus dientes.
+            </p>
+            <img src="assets/imagenes/sspagpoemas.png" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <br>
+            <hr>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="w3-black w3-center w3-padding-24 footer-container">
+            <span class="footer-text">Lizeth Ruaro, 2024</span>
+            <a href="https://www.instagram.com/lizethruaro/" title="Instagram" target="_blank"
+                class="w3-hover-opacity footer-link">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+
+        <script>
+            // Script to open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+        </script>
+
+
+</body>
+
+</html>

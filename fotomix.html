@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <title>Fotografía</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <link rel="stylesheet" href="stylew3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="styleaudiv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="assets/imagenes/LR.png" type="image/png">
+    <script src="script.js" defer></script> <!-- Incluye el archivo JavaScript -->
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-64 w3-center"><b>Fotografía</b></h3>
+        <a href="#aluza" onclick="w3_close()" class="w3-bar-item w3-button">ALUZA</a>
+        <a href="#textores" onclick="w3_close()" class="w3-bar-item w3-button">Textores</a>
+        <a href="#pasares" onclick="w3_close()" class="w3-bar-item w3-button">Pasares</a>
+        <a href="#retratos" onclick="w3_close()" class="w3-bar-item w3-button">(Re)Tratos</a>
+        <a href="#granja" onclick="w3_close()" class="w3-bar-item w3-button">Granja</a>
+        <a href="#eclipses" onclick="w3_close()" class="w3-bar-item w3-button">Eclipses</a>
+
+    </nav>
+
+    <!-- Top menu on all screens -->
+    <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">Lizeth Ruaro</span>
+        <button onclick="abrirMenu()" class="w3-button w3-white w3-right margen-derecha">☰</button>
+        <button onclick="redirigirPortafolio()" class="w3-button w3-white w3-right">←</button>
+    </header>
+
+
+    <!-- Overlay effect when opening sidebar -->
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer;display:none;" id="myOverlay">
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <div class="videopresentacion">
+            <video autoplay loop muted playsinline class="responsive-video">
+                <source src="assets/videos/videofoto.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+
+        <hr>
+
+        <div class="content">
+            <h5 id="aluza">ALUZA</h5>
+            <h6>2023</h6>
+            <h6>Serie Fotográfica</h6>
+            <p>Desde los reflejos de los cristales hasta la puesta de sol, luces y sombras se complementan para orientar
+                la mirada hacia el ocaso.</p>
+            <img src="assets/imagenes/pupila.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <h8>PUPILA</h8>
+            <p>A ojo abierto no penetra luz aun cuando por la ventana entra a raudales, que ante tristeza aguda, la
+                pupila dilata solo a limitaciones.
+                Receptor dañado solo en su código, mecanicidad inaccesible.
+                Asirse al resplandor precario es lo único posible.</p>
+            <img src="assets/imagenes/resolana.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <h8>Resolana</h8>
+            <p></p>
+            <img src="assets/imagenes/resol.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/luz.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <br>
+            <br>
+            <br>
+
+            <h5 id="textores">Textores</h5>
+            <h6>2023</h6>
+            <h6>Serie Fotográfica</h6>
+            <p>Textores explora la textura y colores de objetos cotidianos invitando a la observación detallada de
+                objetos en la cotidianidad.</p>
+            <img src="assets/imagenes/rojoo.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/pastelrojo.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/amarillo.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/azul.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/azulito.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <br>
+            <br>
+            <hr>
+
+            <h5 id="pasares">Pasares</h5>
+            <h6>2023-presente</h6>
+            <h6>Serie Fotográfica</h6>
+            <p>Recorriendo la ciudad a través de miradas puntuales.</p>
+            <img src="assets/imagenes/jardinjapones.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/acuatico.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/atico.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/citadella.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/town.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/fuente.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/callejon.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <br>
+            <hr>
+
+            <h5 id="retratos">(Re)Tratos</h5>
+            <h6>2023</h6>
+            <h6>Serie Fotográfica</h6>
+            <p>De ellos hacia mi y de mí hacia ellos. (Re)Tratos no son solo fotografías, sino, más bien, cartas en
+                fotografías. Cada una testigo de como mi mirada y las miradas de personas importantes en mi vida se
+                entrelazan creando una imagen de ellos.</p>
+            <img src="assets/imagenes/doble.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/pega.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/beige.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/computerroom.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/tela.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/Miralatela.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/libro.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/piensodar.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/hemisferios.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/mesa.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/pau1.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/pau2.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/autorretrato.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/verdete.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+
+
+            <br>
+            <hr>
+
+            <h5 id="eclipses">Eclipses</h5>
+            <h6>2023</h6>
+            <h6>Serie Fotográfica</h6>
+            <p>Eclipses es una reinterpretación de los eclipses lunares, resaltando los rojos vibrantes sobre los fondos
+                negros y grises.</p>
+            <img src="assets/imagenes/eclipses/csepau.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/eclipses/techo.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/eclipses/csepau2.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/eclipses/pantalon.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/eclipses/inata.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/eclipses/emergencia.jpg" alt="Descripción de la imagen"
+                class="imagen-responsiva" />
+            <br>
+            <br>
+            <hr>
+
+            <h5 id="granja">Miradas de la Granja</h5>
+            <h6>2023</h6>
+            <h6>Serie Fotográfica</h6>
+            <p>Retrata la vida de los animales en una granja familiar, resaltando sus miradas, personalidades y formas
+                de organización.</p>
+            <img src="assets/imagenes/granja/granja1.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/granja/granja2.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/granja/be.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/granja/borregos2.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/granja/2patos.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/granja/filapatos.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/granja/filapatos2.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/granja/pato1.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/granja/pato3.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/granja/pato2.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/granja/patoypollos.jpg" alt="Descripción de la imagen"
+                class="imagen-responsiva" />
+            <img src="assets/imagenes/granja/guajolote.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/granja/perro.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/granja/chiquis.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/granja/2pollos2.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/granja/2pollos.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <img src="assets/imagenes/granja/3pollos.jpg" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <br>
+            <br>
+            <hr>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="w3-black w3-center w3-padding-24 footer-container">
+            <span class="footer-text">Lizeth Ruaro, 2024</span>
+            <a href="https://www.instagram.com/lizethruaro/" title="Instagram" target="_blank"
+                class="w3-hover-opacity footer-link">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+
+        <script>
+            // Script to open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+        </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <title>Audiovisual</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <link rel="stylesheet" href="stylew3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="styleaudiv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="assets/imagenes/LR.png" type="image/png">
+    <script src="script.js" defer></script> <!-- Incluye el archivo JavaScript -->
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-64 w3-center"><b>Audiovisual</b></h3>
+        <a href="#calle-sin-espacio" onclick="w3_close()" class="w3-bar-item w3-button">CALLE SIN ESPACIO</a>
+        <a href="#alerta-constante" onclick="w3_close()" class="w3-bar-item w3-button">ALERTA CONSTANTE</a>
+        <a href="#adelitas-escandalosas" onclick="w3_close()" class="w3-bar-item w3-button">Adelitas Escadalosas</a>
+        <a href="#museo-irreal" onclick="w3_close()" class="w3-bar-item w3-button">Museo Irreal</a>
+        <a href="#contando-arroz" onclick="w3_close()" class="w3-bar-item w3-button">Contando Arroz</a>
+    </nav>
+
+    <!-- Top menu on all screens -->
+    <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">Lizeth Ruaro</span>
+        <button onclick="abrirMenu()" class="w3-button w3-white w3-right margen-derecha">☰</button>
+        <button onclick="redirigirPortafolio()" class="w3-button w3-white w3-right">←</button>
+    </header>
+
+
+    <!-- Overlay effect when opening sidebar -->
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer;display:none;" id="myOverlay">
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <div class="videopresentacion">
+            <video autoplay loop muted playsinline class="responsive-video">
+                <source src="assets/videos/videoaudiovisual.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+
+        <hr>
+
+        <div class="content">
+            <a id="calle-sin-espacio" href="https://lizethruaro.github.io/calle-sin-espacio/" target="_blank"
+                class="h5-link">CALLE SIN
+                ESPACIO</a>
+            <h6>2023</h6>
+            <h6>COLECTIVO ENCAJE</h6>
+            <h6>Web Art / Videoarte</h6>
+            <p>CALLE SIN ESPACIO es una pieza de web art que aborda la problemática del acoso callejero.
+                Haciendo uso de elementos emergentes y el videoarte, para ilustrar experiencias recolectadas a través de
+                entrevistas.</p>
+            <div class="video-container">
+                <video class="responsive-video" controls>
+                    <source src="assets/videos/CALLESINESPACIO.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+            <p>CALLE SIN ESPACIO ilustra y recolecta las vivencias de las mujeres ante el acoso callejero, expresión de
+                violencia de género, en Lerma. Se hace uso de una paleta monocromática en escala de grises con un pop de
+                color rojo, usando este último como un contraste que señala peligros apoyado en la psicología del color.
+                El conjunto de elementos emergentes crea una sensación de intrusividad en el espectador aludiendo al
+                sentimiento común que pueden experimentar las víctimas de acoso callejero.</p>
+
+            <img src="assets/imagenes/SSCSE.png" alt="Descripción de la imagen" class="imagen-responsiva" />
+            <br>
+            <hr>
+
+            <h5 id="alerta-constante"> ALERTA CONSTANTE</h5>
+            <h6>2023</h6>
+            <h6>COLECTIVO ENCAJE</h6>
+            <h6>Wereable / Videoarte</h6>
+            <p>ALERTA CONSTANTE, se conforma de una pechera que permite el monitoreo de pulsaciones cardíacas de la
+                usuaria.
+                Y la documentación de estos datos el transitar espacios públicos, presentados a través de un videoarte.
+            </p>
+            <div class="video-container">
+                <video class="responsive-video" controls>
+                    <source src="assets/videos/alertaconstante.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+            <p>ALERTA CONSTANTE es una pieza que comprende un artefacto interactivo
+                wearable a modo de pechera que permite el monitoreo de pulsaciones cardíacas
+                de la usuaria. El cuerpo se encuentra interactuando directamente con circuitos
+                electrónicos a través de sus funciones fisiológicas.</p>
+            <p>El acoso callejero, acciones violentas, arraigadas en nuestra sociedad, han y siguen
+                teniendo consecuencias directas sobre nuestro estado anímico, manifestadas
+                también a través de nuestros signos vitales.</p>
+            <p>Para una mujer, el transitar espacios públicos resulta una fuente frecuente de
+                ansiedad, un sometimiento al estado de alerta al ser consciente de los peligros
+                que esto conlleva.</p>
+            <p>La pieza realiza un monitoreo del pulso cardiaco de una mujer en su día a día.
+                Construyendo un registro de su sentir.</p>
+
+            <img src="assets/imagenes/alertapresentacion.jpg" alt="Descripción de la imagen"
+                class="imagen-responsiva" />
+
+            <p>ALERTA CONSTANTE no es una pieza que busque registrar la cantidad o cualidad
+                del acoso recibido, sino, más bien refiere a usar la fisiología de la interactora como
+                el facilitador de información, el evidenciador de una sensación de alerta que
+                nunca desaparece al ser una mujer transitando por un espacio público que no
+                parece tener una pertenencia compartida.</p>
+            <p>El artefacto se construye a partir del uso del sistema Arduino, un sensor cardíaco,
+                y un sensor de contacto, dentro de una mochila de tela.</p>
+
+            <img src="assets/imagenes/alertapresentacion2.jpg" alt="Descripción de la imagen"
+                class="imagen-responsiva" />
+
+            <br>
+            <br>
+            <hr>
+
+            <h5 id="adelitas-escandalosas">Adelitas Escandalosas</h5>
+            <h6>2023</h6>
+            <h6>Videarte</h6>
+            <p>Documentación de performance hecho por Adelitas Escandalosas en contra de la violencia verbal hacia la
+                mujer.
+            </p>
+            <div class="video-container">
+                <video class="responsive-video" controls>
+                    <source src="assets/videos/adelitasescandalosas.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+            <p>Tomadas de manos y gritándonos entre nosotras mismas lo que se nos dice y reprocha día a día. Marchando
+                por
+                el espacio entre gritos catárticos, unidas por un carrete de infinitos metros de hilo, envoliéndonos
+                entre
+                nosotras, manchándonos y uniéndonos, volviéndonos una.</p>
+
+            <br>
+            <hr>
+
+            <h5 id="museo-irreal"> Museo Irreal</h5>
+            <h6>2023</h6>
+            <h6>Videarte</h6>
+            <p>Alternancia entre recorridos en dos museos distintos.</p>
+            <div class="video-container">
+                <video class="responsive-video" controls>
+                    <source src="assets/videos/museoirreal.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+            <p>¿Cómo se recorre un museo? ¿Cuáles son las perspectivas aceptadas? <br>
+                Museo Irreal es un retrato de mi recorrido a estos museos. Una invitación a observar de cerca y cambiar
+                direcciones en la mirada. </p>
+            <br>
+            <br>
+            <br>
+
+            <h5 id="contando-arroz">Contando Arroz</h5>
+            <h6>2023</h6>
+            <h6>Performance / Documentación de performance</h6>
+            <p>Comencé contando arroz,<br>
+                grano por grano hasta llegar allí.<br>
+                Comencé y seguí y seguí<br>
+                ¿Cuál era el punto de llegar hasta aquí?<br>
+                Comencé contando granos<br>
+                Terminé con un montón<br>
+                y mientras el aire me los arrebataba,<br>
+                solo en ti pensaba.</p>
+            <div class="video-container">
+                <video class="responsive-video" controls>
+                    <source src="assets/videos/arroz.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+            <p>Contando arroz es un performance que consiste en sentarse en un espacio concurrido, vaciar un montón de
+                arroz en la mesa y contar en voz alta, separando hasta llegar a 500.</p>
+            <div class="video-container">
+                <video class="responsive-video" controls>
+                    <source src="assets/videos/arrozvid2.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+            <p>Contando arroz me encontré con todas las penas que pasé, me enfrenté mí misma y a lo que dolía.
+                El ejercicio empezó casi lúdicamente, como niña pequeña que aprende a contar. Pero escala y escala. Cada
+                grano de arroz era algo que me habías hecho, era cada palabra hiriente y cada problema. Mientras más
+                pensaba en ello, era cada pequeña pelea, cada afección, cada ausencia y cada día de duelo.</p>
+            <p>Con el tiempo y la repetitividad, los números se olvidan, la boca se queda sin saliva y las palabras se
+                atoran en la garganta. El cuerpo se tensa, tiembla, se pelea a golpes con la mente ¿Cuál era el punto de
+                contar? ¿Cuál era mi necedad de llegar a 500 sin parar?</p>
+            <br>
+            <br>
+            <br>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="w3-black w3-center w3-padding-24 footer-container">
+            <span class="footer-text">Lizeth Ruaro, 2024</span>
+            <a href="https://www.instagram.com/lizethruaro/" title="Instagram" target="_blank"
+                class="w3-hover-opacity footer-link">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+
+        <script>
+            // Script to open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+        </script>
+
+
+</body>
+
+</html>

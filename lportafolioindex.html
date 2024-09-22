@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <title>Lizeth Ruaro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <link rel="stylesheet" href="stylew3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="assets/imagenes/LR.png" type="image/png">
+    <script src="script.js" defer></script> <!-- Incluye el archivo JavaScript -->
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-64 w3-center"><b>Lizeth<br>Ruaro</b></h3>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">OBRA
+            <button class="dropdown-toggle" onclick="toggleDropdown(event)"></button>
+        </a>
+        <div id="dropdownMenu" class="w3-dropdown-content">
+            <a href="audvmix.html">Audiovisual</a>
+            <a href="poemasmix.html">Poemas</a>
+            <a href="fotomix.html">Fotografía</a>
+            <a href="plasticmixindex.html">Obras Plásticas</a>
+        </div>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">BIO</a>
+    </nav>
+
+    <!-- Top menu on all screens -->
+    <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">Lizeth Ruaro</span>
+        <button onclick="w3_open()" class="w3-button w3-white w3-right">☰</button>
+    </header>
+
+    <!-- Overlay effect when opening sidebar -->
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer;display:none;" id="myOverlay">
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <div class="videopresentacion">
+            <video autoplay loop muted playsinline class="responsive-video">
+                <source src="assets/videos/videopresentacion.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+
+        <hr>
+
+        <!-- Photo grid -->
+
+        <div class="w3-row">
+            <div class="w3-third w3-padding-small">
+                <div class="w3-container w3-padding">
+                    <div class="cont">
+                        <div><video controls class="w3-image" onclick="onClick(this)">
+                                <source src="assets/videos/CALLESINESPACIO.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <br><a href="audvmix.html#calle-sin-espacio">CALLE
+                                SIN ESPACIO</a>
+                            <hr>
+                        </div>
+                        <div><video controls class="w3-image" onclick="onClick(this)" alt="ALERTA CONSTANTE">
+                                <source src="assets/videos/arroz.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <br><a href="audvmix.html#contando-arroz">Contando Arroz</a>
+                            <hr>
+                        </div>
+                        <div><img src="assets/imagenes/recortes/avecesr.jpg" class="w3-image" onclick="onClick(this)"
+                                alt="PUPILA">
+                            <br><a href="poemasmix.html#a-veces">A Veces</a>
+                            <hr>
+                        </div>
+                        <div><img src="assets/imagenes/recortes/dobler.jpg" class="w3-image" onclick="onClick(this)"
+                                alt="Consuelo">
+                            <br><a href="fotomix.html#retratos">(Re)Tratos</a>
+                            <hr>
+                        </div>
+                        <div><img src="assets/imagenes/recortes/granjar.jpg" class="w3-image" onclick="onClick(this)"
+                                alt="Consuelo">
+                            <br><a href="fotomix.html#granja">Miradas de la Granja</a>
+                            <hr>
+                        </div>
+                        <div><img src="assets/imagenes/recortes/corazonrecorte.jpg" class="w3-image"
+                                onclick="onClick(this)" alt="Consuelo">
+                            <br><a href="plasticmixindex.html#corazon">Corazón de Vela</a>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-padding-small">
+                <div class="w3-container w3-padding">
+                    <div><video controls class="w3-image" onclick="onClick(this)" alt="ALERTA CONSTANTE">
+                            <source src="assets/videos/alertaconstante.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                        <br><a href="audvmix.html#alerta-constante">ALERTA CONSTANTE</a>
+                        <hr>
+                    </div>
+                    <div><video controls class="w3-image" onclick="onClick(this)" alt="ALERTA CONSTANTE">
+                            <source src="<video controls class=" w3-image" onclick="onClick(this)"
+                                alt="ALERTA CONSTANTE">
+                            <source src="assets/videos/museoirreal.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                        <br><a href="audvmix.html#museo-irreal">Museo Irreal</a>
+                        <hr>
+                    </div>
+                    <div><img src="assets/imagenes/recortes/araya.jpg" class="w3-image" onclick="onClick(this)"
+                            alt="Consuelo">
+                        <br><a href="poemasmix.html#a-raya">A Raya</a>
+                        <hr>
+                    </div>
+                    <div><img src="assets/imagenes/recortes/jardinr.jpg" class="w3-image" onclick="onClick(this)"
+                            alt="Consuelo">
+                        <br><a href="fotomix.html#pasares">Pasares</a>
+                        <hr>
+                    </div>
+                    <div><img src="assets/imagenes/recortes/pupilar.jpg" class="w3-image" onclick="onClick(this)"
+                            alt="Consuelo">
+                        <br><a href="fotomix.html#aluza">ALUZA</a>
+                        <hr>
+                    </div>
+                    <div><img src="assets/imagenes/recortes/recortenolineal.jpg" class="w3-image"
+                            onclick="onClick(this)" alt="Consuelo">
+                        <br><a href="plasticmixindex.html#no-lineal">No Lineal</a>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-padding-small">
+                <div class="w3-container w3-padding">
+                    <div><video controls class="w3-image" onclick="onClick(this)">
+                            <source src="assets/videos/adelitasescandalosas.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                        <br><a href="audvmix.html#adelitas-escandalosas">Adelitas Escandalosas</a>
+                        <hr>
+                    </div>
+                    <div><video controls class="w3-image" onclick="onClick(this)">
+                            <source src="assets/videos/4sentimiento.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                        <br><a href="poemasmix.html#sentimiento">SENTIMIENTO</a>
+                        <hr>
+                    </div>
+                    <div><img src="assets/imagenes/recortes/paginapoemas.jpg" class="w3-image" onclick="onClick(this)"
+                            alt="Consuelo">
+                        <br><a href="poemasmix.html#absurdos">Absurdos y entramados</a>
+                        <hr>
+                    </div>
+                    <div><img src="assets/imagenes/recortes/cenar.jpg" class="w3-image" onclick="onClick(this)"
+                            alt="Consuelo">
+                        <br><a href="fotomix.html#textores">Textores</a>
+                        <hr>
+                    </div>
+                    <div><img src="assets/imagenes/recortes/idkr.jpg" class="w3-image" onclick="onClick(this)"
+                            alt="Consuelo">
+                        <br><a href="fotomix.html#eclipses">Eclipses</a>
+                        <hr>
+                    </div>
+                    <div><img src="assets/imagenes/recortes/recreacionr.jpg" class="w3-image" onclick="onClick(this)"
+                            alt="Consuelo">
+                        <br><a href="plasticmixindex.html#recreacion">(Re) Creación</a>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination 
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+            </div>
+        </div>-->
+
+        <!-- Modal for full size images on click
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>-->
+
+        <!-- About section -->
+        <div class="w3-container w3-black w3-center w3-text-light-grey w3-padding-32" id="about">
+            <img src="assets/imagenes/sobremi1.jpg" alt="Me" class="w3-image w3-padding-32" width="400" height="450">
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>Lizeth Ruaro</h4>
+                <p>Artista y escritora</p>
+                <p>Mi propósito es traducir la visceralidad de sentimientos y sensaciones a través del lenguaje
+                    artístico, dando orden, forma y sonido a lo intangible. Utilizando técnicas como la escritura, el
+                    videoarte, diseño sonoro, y la fotografía. La narrativa personal es una pieza angular de mi obra.
+                    Entre mis referentes se encuentran la escritora Sylvia Plath, y los artistas contemporáneos Sun Yuan
+                    & Peng Yu. <br>
+                    Formo parte de los colectivos artísticos ENCAJE, ANOMALÍA Y C.C.A.V.U.L. dónde he tocado temas
+                    relacionados a la perspectiva de género, el terror, y técnicas como el live coding.
+                </p>
+                <p>email: ruarolizeth@gmail.com</p>
+                <hr class="w3-opacity">
+                <p><button onclick="redirigircv()"
+                        class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">Conoce
+                        más</button></p>
+                <hr class="w3-opacity">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Contact section 
+    <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+        <div class="w3-content" style="max-width:600px">
+            <h4 class="w3-center"><b>Contacto</b></h4>
+            <form action="/action_page.php" target="_blank">
+                <div class="w3-section">
+                    <label>Nombre</label>
+                    <input class="w3-input w3-border" type="text" name="Nombre" required>
+                </div>
+                <div class="w3-section">
+                    <label>Email</label>
+                    <input class="w3-input w3-border" type="text" name="Email" required>
+                </div>
+                <div class="w3-section">
+                    <label>Mensaje</label>
+                    <input class="w3-input w3-border" type="text" name="Mensaje" required>
+                </div>
+                <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>-->
+
+    <!-- Footer -->
+    <div class="w3-black w3-center w3-padding-24 footer-container">
+        <span class="footer-text">Lizeth Ruaro, 2024</span>
+        <a href="https://www.instagram.com/lizethruaro/" title="Instagram" target="_blank"
+            class="w3-hover-opacity footer-link">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+    </script>
+
+
+</body>
+
+</html>
