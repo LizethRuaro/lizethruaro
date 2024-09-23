@@ -44,27 +44,29 @@
         <!-- Push down content on small screens -->
         <div class="w3-hide-large" style="margin-top:83px"></div>
 
-        <div class="videopresentacion">
-            <video autoplay loop muted playsinline class="responsive-video">
-                <source src="assets/videos/videoprespoem.mp4" type="video/mp4">
-                Tu navegador no soporta el elemento de video.
-            </video>
+        <div class="video-container presentation">
+            <iframe class="presentation-video"
+                src="https://www.youtube.com/embed/YOn6khyHX78?playlist=s4Boiq3ZJ-Q&loop=1&autoplay=1&mute=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
         </div>
 
-        <hr>
-
         <div class="content">
-
             <h5 id="a-raya">SENTIMIENTO</h5>
             <h6>2024</h6>
             <h6>Videopoema</h6>
             <p>A través de la escritura, los visuales y el diseño sonoro, SENTIMIENTO explora la crudeza del sentir.
                 Siendo fiel al propósito de la artista: traducir la visceralidad de sentimientos y sensaciones a través
                 del lenguaje artístico. </p>
-            <video class="responsive-video" controls>
-                <source src="assets/videos/Sentimiento-videopoema.mov" type="video/mp4">
-                Tu navegador no soporta videos.
-            </video>
+            <div class="video-container">
+                <iframe class="normal-video" src="https://www.youtube.com/embed/A5eyFmVFXmI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
             <br>
             <br>
             <hr>
@@ -112,39 +114,40 @@
             <img src="assets/imagenes/sspagpoemas.png" alt="Descripción de la imagen" class="imagen-responsiva" />
             <br>
             <hr>
-
         </div>
 
-        <!-- Footer -->
-        <div class="w3-black w3-center w3-padding-24 footer-container">
-            <span class="footer-text">Lizeth Ruaro, 2024</span>
-            <a href="https://www.instagram.com/lizethruaro/" title="Instagram" target="_blank"
-                class="w3-hover-opacity footer-link">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-        </div>
+    </div>
 
-        <script>
-            // Script to open and close sidebar
-            function w3_open() {
-                document.getElementById("mySidebar").style.display = "block";
-                document.getElementById("myOverlay").style.display = "block";
-            }
+    <!-- Footer -->
+    <div class="w3-black w3-center w3-padding-24 footer-container">
+        <span class="footer-text">Lizeth Ruaro, 2024</span>
+        <a href="https://www.instagram.com/lizethruaro/" title="Instagram" target="_blank"
+            class="w3-hover-opacity footer-link">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
 
-            function w3_close() {
-                document.getElementById("mySidebar").style.display = "none";
-                document.getElementById("myOverlay").style.display = "none";
-            }
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
 
-            // Modal Image Gallery
-            function onClick(element) {
-                document.getElementById("img01").src = element.src;
-                document.getElementById("modal01").style.display = "block";
-                var captionText = document.getElementById("caption");
-                captionText.innerHTML = element.alt;
-            }
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
 
-        </script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+    </script>
 
 
 </body>
