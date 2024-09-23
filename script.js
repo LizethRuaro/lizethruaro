@@ -43,7 +43,7 @@ window.onclick = function(event) {
 
 //REDIRIGIR PAGINA BOTON FLECHA//
 function redirigirPortafolio() {
-    window.location.href = 'lportafolioindex.html'; // Reemplaza con el nombre del archivo al que quieres redirigir
+    window.location.href = 'index.html'; // Reemplaza con el nombre del archivo al que quieres redirigir
 }
 
 //REDIRIGIR BOTON CONOCE MAS//
